@@ -34,6 +34,16 @@ export class AppComponent implements OnInit {
         },
         { timeout: 15000 }
       );
+      navigator.geolocation.watchPosition(
+        (pos) => {
+          this.latitude2 = pos.coords.latitude;
+          this.longitude2 = pos.coords.longitude;
+        },
+        () => {
+          alert('Sem rastreamento!');
+        },
+        { timeout: 15000 }
+      );
 
       const clear = document.querySelector('.limpar') as HTMLInputElement;
       clear.addEventListener('click', () => {
