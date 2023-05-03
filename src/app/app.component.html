@@ -11,14 +11,20 @@
   <h1>Latitude: {{latitude}}<br>Longitude: {{longitude}}</h1>
   <div class="d-flex gap-2">
     <div class="btn bg-success text-secondary mr-2">
-      <a class="text-white" [href]="map_url">Onde estou? (Google Maps</a>
+      <a class="text-white" [href]="map_url">Onde estou? (Google Maps)
+        <i class="fa-solid fa-location-dot"></i>
+      </a>
     </div>
     <div class="btn bg-danger ml-2">
-      <a class="text-white limpar">Limpar</a>
+      <a class="text-white limpar">Limpar
+        <i class="fa-solid fa-eraser"></i>
+      </a>
     </div>
   </div>
   <hr>
-  <button class="btn bg-warning text-white" data-toggle="collapse" data-target="#rastro">Rastreamento</button>
+  <button class="btn bg-warning " data-toggle="collapse" data-target="#rastro">Rastreamento
+    <i class="fa-solid fa-map"></i>
+  </button>
 
   <div id="rastro" class="collapse">
     <h1>Latitude:{{latitude2}}<br>Longitude:{{longitude2}}</h1>

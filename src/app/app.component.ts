@@ -51,6 +51,8 @@ export class AppComponent implements OnInit {
         this.longitude = 0;
         this.map_url = '';
       });
+    } else {
+      alert('Sem permisão!');
     }
   }
 }
